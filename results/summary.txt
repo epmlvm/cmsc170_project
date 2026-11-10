@@ -1,0 +1,38 @@
+DBSCAN weather prediction - MUN_LosBanos_Laguna.txt, week mode (leave one day out)
+data: 76 rows, 2015-11-12 01:00:00 to 2015-11-19 00:00:00
+gap: 3 hours   min_pts tried: [3, 5, 8, 12, 20]   eps values per min_pts: 12
+
+FOLDS (one per hidden day)
+  day 1: test 24 rows, train 49 rows, eps=1.220 min_pts=3, clusters=5
+  day 2: test 24 rows, train 48 rows, eps=2.727 min_pts=12, clusters=2
+  day 3: test  8 rows, train 66 rows, eps=1.111 min_pts=3, clusters=6
+  day 4: test  8 rows, train 66 rows, eps=0.796 min_pts=3, clusters=6
+  day 5: test  8 rows, train 67 rows, eps=1.329 min_pts=3, clusters=4
+  day 6: test  2 rows, train 74 rows, eps=0.908 min_pts=3, clusters=7
+  day 7: test  2 rows, train 74 rows, eps=0.910 min_pts=3, clusters=7
+
+RESULTS over all 76 rows
+method        accuracy  macro-F1 skill/clim   sky acc   unknown
+DBSCAN           0.092     0.064     -0.192     0.211     0.395
+Climatology      0.368     0.215      0.000     0.408     0.000
+Majority         0.013     0.005     -0.268     0.092     0.000
+
+BY DAY (accuracy)
+method        day 1 (n=24)  day 2 (n=24)  day 3 (n=8)  day 4 (n=8)  day 5 (n=8)  day 6 (n=2)  day 7 (n=2)
+DBSCAN                 0.12           0.12           0.12           0.00           0.00           0.00           0.00
+Climatology            0.21           0.29           0.50           0.62           0.62           0.50           0.50
+Majority               0.00           0.00           0.00           0.00           0.00           0.00           0.50
+
+DBSCAN PER CLASS
+label      precision    recall        F1  support
+ClearD         0.000     0.000     0.000       13
+ClearN         0.167     0.083     0.111       12
+Cloud1D        0.278     0.294     0.286       17
+Cloud1N        0.000     0.000     0.000       14
+Cloud2D        0.000     0.000     0.000        2
+Cloud2N        0.000     0.000     0.000        5
+Rain0D         0.250     0.143     0.182        7
+Rain1D         0.000     0.000     0.000        1
+Rain1N         0.000     0.000     0.000        5
+
+row-by-row predictions: predictions_LosBanos_Laguna.txt

@@ -1,0 +1,817 @@
+{
+  "results": {
+    "DBSCAN": {
+      "accuracy": 0.09210526315789473,
+      "macro_f1": 0.06429373096039763,
+      "sky_type_accuracy": 0.21052631578947367,
+      "sky_type_macro_f1": 0.15801570144498805,
+      "unknown_rate": 0.39473684210526316,
+      "per_class": {
+        "ClearD": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 13
+        },
+        "ClearN": {
+          "precision": 0.16666666666666666,
+          "recall": 0.08333333333333333,
+          "f1": 0.1111111111111111,
+          "support": 12
+        },
+        "Cloud1D": {
+          "precision": 0.2777777777777778,
+          "recall": 0.29411764705882354,
+          "f1": 0.28571428571428575,
+          "support": 17
+        },
+        "Cloud1N": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 14
+        },
+        "Cloud2D": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 2
+        },
+        "Cloud2N": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        "Rain0D": {
+          "precision": 0.25,
+          "recall": 0.14285714285714285,
+          "f1": 0.18181818181818182,
+          "support": 7
+        },
+        "Rain1D": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1
+        },
+        "Rain1N": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        }
+      },
+      "skill_vs_climatology": -0.19245163414888478,
+      "by_day": {
+        "1": {
+          "n": 24,
+          "accuracy": 0.125,
+          "macro_f1": 0.12222222222222223
+        },
+        "2": {
+          "n": 24,
+          "accuracy": 0.125,
+          "macro_f1": 0.06666666666666667
+        },
+        "3": {
+          "n": 8,
+          "accuracy": 0.125,
+          "macro_f1": 0.2
+        },
+        "4": {
+          "n": 8,
+          "accuracy": 0.0,
+          "macro_f1": 0.0
+        },
+        "5": {
+          "n": 8,
+          "accuracy": 0.0,
+          "macro_f1": 0.0
+        },
+        "6": {
+          "n": 2,
+          "accuracy": 0.0,
+          "macro_f1": 0.0
+        },
+        "7": {
+          "n": 2,
+          "accuracy": 0.0,
+          "macro_f1": 0.0
+        }
+      }
+    },
+    "Climatology": {
+      "accuracy": 0.3684210526315789,
+      "macro_f1": 0.21530882910193255,
+      "sky_type_accuracy": 0.40789473684210525,
+      "sky_type_macro_f1": 0.25889757301522004,
+      "unknown_rate": 0.0,
+      "per_class": {
+        "ClearD": {
+          "precision": 0.38461538461538464,
+          "recall": 0.7692307692307693,
+          "f1": 0.5128205128205128,
+          "support": 13
+        },
+        "ClearN": {
+          "precision": 0.4117647058823529,
+          "recall": 0.5833333333333334,
+          "f1": 0.4827586206896552,
+          "support": 12
+        },
+        "Cloud1D": {
+          "precision": 0.6666666666666666,
+          "recall": 0.47058823529411764,
+          "f1": 0.5517241379310345,
+          "support": 17
+        },
+        "Cloud1N": {
+          "precision": 0.2857142857142857,
+          "recall": 0.14285714285714285,
+          "f1": 0.19047619047619047,
+          "support": 14
+        },
+        "Cloud2D": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 2
+        },
+        "Cloud2N": {
+          "precision": 0.2,
+          "recall": 0.2,
+          "f1": 0.20000000000000004,
+          "support": 5
+        },
+        "Rain0D": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 7
+        },
+        "Rain1D": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1
+        },
+        "Rain1N": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        }
+      },
+      "skill_vs_climatology": 0.0,
+      "by_day": {
+        "1": {
+          "n": 24,
+          "accuracy": 0.20833333333333334,
+          "macro_f1": 0.1285714285714286
+        },
+        "2": {
+          "n": 24,
+          "accuracy": 0.2916666666666667,
+          "macro_f1": 0.2619047619047619
+        },
+        "3": {
+          "n": 8,
+          "accuracy": 0.5,
+          "macro_f1": 0.2833333333333333
+        },
+        "4": {
+          "n": 8,
+          "accuracy": 0.625,
+          "macro_f1": 0.5833333333333334
+        },
+        "5": {
+          "n": 8,
+          "accuracy": 0.625,
+          "macro_f1": 0.7749999999999999
+        },
+        "6": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.5
+        },
+        "7": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.5
+        }
+      }
+    },
+    "Majority": {
+      "accuracy": 0.013157894736842105,
+      "macro_f1": 0.0049382716049382715,
+      "sky_type_accuracy": 0.09210526315789473,
+      "sky_type_macro_f1": 0.0409565823078709,
+      "unknown_rate": 0.0,
+      "per_class": {
+        "ClearD": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 13
+        },
+        "ClearN": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 12
+        },
+        "Cloud1D": {
+          "precision": 0.03571428571428571,
+          "recall": 0.058823529411764705,
+          "f1": 0.044444444444444446,
+          "support": 17
+        },
+        "Cloud1N": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 14
+        },
+        "Cloud2D": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 2
+        },
+        "Cloud2N": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        "Rain0D": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 7
+        },
+        "Rain1D": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1
+        },
+        "Rain1N": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        }
+      },
+      "skill_vs_climatology": -0.2680934427441413,
+      "by_day": {
+        "1": {
+          "n": 24,
+          "accuracy": 0.0,
+          "macro_f1": 0.0
+        },
+        "2": {
+          "n": 24,
+          "accuracy": 0.0,
+          "macro_f1": 0.0
+        },
+        "3": {
+          "n": 8,
+          "accuracy": 0.0,
+          "macro_f1": 0.0
+        },
+        "4": {
+          "n": 8,
+          "accuracy": 0.0,
+          "macro_f1": 0.0
+        },
+        "5": {
+          "n": 8,
+          "accuracy": 0.0,
+          "macro_f1": 0.0
+        },
+        "6": {
+          "n": 2,
+          "accuracy": 0.0,
+          "macro_f1": 0.0
+        },
+        "7": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.3333333333333333
+        }
+      }
+    }
+  },
+  "folds": [
+    {
+      "day": 1,
+      "test_rows": 24,
+      "train_rows": 49,
+      "tuned_on_days": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "eps": 1.2198895264515022,
+      "min_pts": 3,
+      "inner_macro_f1": 0.15532879818594106,
+      "n_clusters": 5,
+      "train_noise_rate": 0.30612244897959184
+    },
+    {
+      "day": 2,
+      "test_rows": 24,
+      "train_rows": 48,
+      "tuned_on_days": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "eps": 2.7267180553513986,
+      "min_pts": 12,
+      "inner_macro_f1": 0.05,
+      "n_clusters": 2,
+      "train_noise_rate": 0.08333333333333333
+    },
+    {
+      "day": 3,
+      "test_rows": 8,
+      "train_rows": 66,
+      "tuned_on_days": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "eps": 1.1113971478503286,
+      "min_pts": 3,
+      "inner_macro_f1": 0.13014735165272798,
+      "n_clusters": 6,
+      "train_noise_rate": 0.21212121212121213
+    },
+    {
+      "day": 4,
+      "test_rows": 8,
+      "train_rows": 66,
+      "tuned_on_days": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7
+      ],
+      "eps": 0.7958901917355373,
+      "min_pts": 3,
+      "inner_macro_f1": 0.1194965528298862,
+      "n_clusters": 6,
+      "train_noise_rate": 0.4090909090909091
+    },
+    {
+      "day": 5,
+      "test_rows": 8,
+      "train_rows": 67,
+      "tuned_on_days": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "eps": 1.329153114536905,
+      "min_pts": 3,
+      "inner_macro_f1": 0.10226447481349443,
+      "n_clusters": 4,
+      "train_noise_rate": 0.2537313432835821
+    },
+    {
+      "day": 6,
+      "test_rows": 2,
+      "train_rows": 74,
+      "tuned_on_days": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "eps": 0.9081619783810172,
+      "min_pts": 3,
+      "inner_macro_f1": 0.1227745289148798,
+      "n_clusters": 7,
+      "train_noise_rate": 0.2702702702702703
+    },
+    {
+      "day": 7,
+      "test_rows": 2,
+      "train_rows": 74,
+      "tuned_on_days": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "eps": 0.9098808469084079,
+      "min_pts": 3,
+      "inner_macro_f1": 0.12041988512576747,
+      "n_clusters": 7,
+      "train_noise_rate": 0.2702702702702703
+    }
+  ],
+  "rows": [
+    {
+      "time": "2015-11-12 01:00:00",
+      "true": "Cloud2N",
+      "dbscan": "unknown"
+    },
+    {
+      "time": "2015-11-12 02:00:00",
+      "true": "Cloud2N",
+      "dbscan": "unknown"
+    },
+    {
+      "time": "2015-11-12 03:00:00",
+      "true": "Cloud2N",
+      "dbscan": "unknown"
+    },
+    {
+      "time": "2015-11-12 04:00:00",
+      "true": "Cloud1N",
+      "dbscan": "unknown"
+    },
+    {
+      "time": "2015-11-12 05:00:00",
+      "true": "Rain1N",
+      "dbscan": "unknown"
+    },
+    {
+      "time": "2015-11-12 06:00:00",
+      "true": "Rain1D",
+      "dbscan": "unknown"
+    },
+    {
+      "time": "2015-11-12 07:00:00",
+      "true": "Cloud1D",
+      "dbscan": "Cloud1D"
+    },
+    {
+      "time": "2015-11-12 08:00:00",
+      "true": "Cloud1D",
+      "dbscan": "Cloud1D"
+    },
+    {
+      "time": "2015-11-12 09:00:00",
+      "true": "Cloud1D",
+      "dbscan": "unknown"
+    },
+    {
+      "time": "2015-11-12 10:00:00",
+      "true": "Cloud1D",
+      "dbscan": "ClearD"
+    },
+    {
+      "time": "2015-11-12 11:00:00",
+      "true": "Cloud1D",
+      "dbscan": "Rain0D"
+    },
+    {
+      "time": "2015-11-12 12:00:00",
+      "true": "Rain0D",
+      "dbscan": "Rain0D"
+    },
+    {
+      "time": "2015-11-12 13:00:00",
+      "true": "Cloud1D",
+      "dbscan": "Rain0D"
+    },
+    {
+      "time": "2015-11-12 14:00:00",
+      "true": "Cloud1D",
+      "dbscan": "Rain0D"
+    },
+    {
+      "time": "2015-11-12 15:00:00",
+      "true": "Cloud1D",
+      "dbscan": "ClearN"
+    },
+    {
+      "time": "2015-11-12 16:00:00",
+      "true": "Cloud1D",
+      "dbscan": "ClearN"
+    },
+    {
+      "time": "2015-11-12 17:00:00",
+      "true": "Cloud1D",
+      "dbscan": "ClearN"
+    },
+    {
+      "time": "2015-11-12 18:00:00",
+      "true": "Cloud1N",
+      "dbscan": "ClearN"
+    },
+    {
+      "time": "2015-11-12 19:00:00",
+      "true": "Cloud1N",
+      "dbscan": "unknown"
+    },
+    {
+      "time": "2015-11-12 20:00:00",
+      "true": "Cloud1N",
+      "dbscan": "unknown"
+    },
+    {
+      "time": "2015-11-12 21:00:00",
+      "true": "Cloud1N",
+      "dbscan": "unknown"
+    },
+    {
+      "time": "2015-11-12 22:00:00",
+      "true": "Cloud1N",
+      "dbscan": "unknown"
+    },
+    {
+      "time": "2015-11-12 23:00:00",
+      "true": "Cloud1N",
+      "dbscan": "unknown"
+    },
+    {
+      "time": "2015-11-13 00:00:00",
+      "true": "Cloud1N",
+      "dbscan": "ClearN"
+    },
+    {
+      "time": "2015-11-13 01:00:00",
+      "true": "Cloud1N",
+      "dbscan": "Cloud1D"
+    },
+    {
+      "time": "2015-11-13 02:00:00",
+      "true": "Cloud2N",
+      "dbscan": "Cloud1D"
+    },
+    {
+      "time": "2015-11-13 03:00:00",
+      "true": "Cloud2N",
+      "dbscan": "Cloud1D"
+    },
+    {
+      "time": "2015-11-13 04:00:00",
+      "true": "Cloud1N",
+      "dbscan": "Cloud1D"
+    },
+    {
+      "time": "2015-11-13 05:00:00",
+      "true": "Cloud1N",
+      "dbscan": "Cloud1D"
+    },
+    {
+      "time": "2015-11-13 06:00:00",
+      "true": "Cloud1D",
+      "dbscan": "Cloud1D"
+    },
+    {
+      "time": "2015-11-13 07:00:00",
+      "true": "Cloud1D",
+      "dbscan": "Cloud1D"
+    },
+    {
+      "time": "2015-11-13 08:00:00",
+      "true": "Cloud1D",
+      "dbscan": "Cloud1D"
+    },
+    {
+      "time": "2015-11-13 09:00:00",
+      "true": "Cloud2D",
+      "dbscan": "ClearD"
+    },
+    {
+      "time": "2015-11-13 10:00:00",
+      "true": "Cloud2D",
+      "dbscan": "ClearD"
+    },
+    {
+      "time": "2015-11-13 11:00:00",
+      "true": "Rain0D",
+      "dbscan": "ClearD"
+    },
+    {
+      "time": "2015-11-13 12:00:00",
+      "true": "Rain0D",
+      "dbscan": "ClearD"
+    },
+    {
+      "time": "2015-11-13 13:00:00",
+      "true": "Rain0D",
+      "dbscan": "ClearD"
+    },
+    {
+      "time": "2015-11-13 14:00:00",
+      "true": "Rain0D",
+      "dbscan": "ClearD"
+    },
+    {
+      "time": "2015-11-13 15:00:00",
+      "true": "Cloud1D",
+      "dbscan": "ClearD"
+    },
+    {
+      "time": "2015-11-13 16:00:00",
+      "true": "Cloud1D",
+      "dbscan": "ClearD"
+    },
+    {
+      "time": "2015-11-13 17:00:00",
+      "true": "Cloud1D",
+      "dbscan": "ClearD"
+    },
+    {
+      "time": "2015-11-13 18:00:00",
+      "true": "Cloud1N",
+      "dbscan": "ClearD"
+    },
+    {
+      "time": "2015-11-13 19:00:00",
+      "true": "ClearN",
+      "dbscan": "ClearD"
+    },
+    {
+      "time": "2015-11-13 20:00:00",
+      "true": "ClearN",
+      "dbscan": "ClearD"
+    },
+    {
+      "time": "2015-11-13 21:00:00",
+      "true": "ClearN",
+      "dbscan": "ClearD"
+    },
+    {
+      "time": "2015-11-13 22:00:00",
+      "true": "ClearN",
+      "dbscan": "ClearD"
+    },
+    {
+      "time": "2015-11-13 23:00:00",
+      "true": "ClearN",
+      "dbscan": "ClearD"
+    },
+    {
+      "time": "2015-11-14 00:00:00",
+      "true": "Cloud1N",
+      "dbscan": "Cloud1D"
+    },
+    {
+      "time": "2015-11-14 03:00:00",
+      "true": "Rain1N",
+      "dbscan": "unknown"
+    },
+    {
+      "time": "2015-11-14 06:00:00",
+      "true": "Rain1N",
+      "dbscan": "unknown"
+    },
+    {
+      "time": "2015-11-14 09:00:00",
+      "true": "ClearD",
+      "dbscan": "unknown"
+    },
+    {
+      "time": "2015-11-14 12:00:00",
+      "true": "ClearD",
+      "dbscan": "Cloud1D"
+    },
+    {
+      "time": "2015-11-14 15:00:00",
+      "true": "ClearD",
+      "dbscan": "Cloud1D"
+    },
+    {
+      "time": "2015-11-14 18:00:00",
+      "true": "Rain0D",
+      "dbscan": "Cloud1D"
+    },
+    {
+      "time": "2015-11-14 21:00:00",
+      "true": "Cloud1N",
+      "dbscan": "unknown"
+    },
+    {
+      "time": "2015-11-15 00:00:00",
+      "true": "ClearN",
+      "dbscan": "ClearN"
+    },
+    {
+      "time": "2015-11-15 03:00:00",
+      "true": "Rain1N",
+      "dbscan": "unknown"
+    },
+    {
+      "time": "2015-11-15 06:00:00",
+      "true": "Rain1N",
+      "dbscan": "unknown"
+    },
+    {
+      "time": "2015-11-15 09:00:00",
+      "true": "ClearD",
+      "dbscan": "unknown"
+    },
+    {
+      "time": "2015-11-15 12:00:00",
+      "true": "ClearD",
+      "dbscan": "unknown"
+    },
+    {
+      "time": "2015-11-15 15:00:00",
+      "true": "ClearD",
+      "dbscan": "unknown"
+    },
+    {
+      "time": "2015-11-15 18:00:00",
+      "true": "ClearD",
+      "dbscan": "unknown"
+    },
+    {
+      "time": "2015-11-15 21:00:00",
+      "true": "ClearN",
+      "dbscan": "unknown"
+    },
+    {
+      "time": "2015-11-16 00:00:00",
+      "true": "ClearN",
+      "dbscan": "unknown"
+    },
+    {
+      "time": "2015-11-16 03:00:00",
+      "true": "ClearN",
+      "dbscan": "unknown"
+    },
+    {
+      "time": "2015-11-16 06:00:00",
+      "true": "ClearD",
+      "dbscan": "Cloud1N"
+    },
+    {
+      "time": "2015-11-16 09:00:00",
+      "true": "ClearD",
+      "dbscan": "unknown"
+    },
+    {
+      "time": "2015-11-16 12:00:00",
+      "true": "ClearD",
+      "dbscan": "Cloud1D"
+    },
+    {
+      "time": "2015-11-16 15:00:00",
+      "true": "ClearD",
+      "dbscan": "Cloud1D"
+    },
+    {
+      "time": "2015-11-16 18:00:00",
+      "true": "ClearD",
+      "dbscan": "Cloud1D"
+    },
+    {
+      "time": "2015-11-16 21:00:00",
+      "true": "ClearN",
+      "dbscan": "Cloud1D"
+    },
+    {
+      "time": "2015-11-17 00:00:00",
+      "true": "ClearN",
+      "dbscan": "Cloud1N"
+    },
+    {
+      "time": "2015-11-17 12:00:00",
+      "true": "ClearD",
+      "dbscan": "unknown"
+    },
+    {
+      "time": "2015-11-18 00:00:00",
+      "true": "Rain0D",
+      "dbscan": "unknown"
+    },
+    {
+      "time": "2015-11-18 12:00:00",
+      "true": "Cloud1D",
+      "dbscan": "unknown"
+    },
+    {
+      "time": "2015-11-19 00:00:00",
+      "true": "ClearN",
+      "dbscan": "unknown"
+    }
+  ]
+}

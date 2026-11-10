@@ -1,0 +1,44 @@
+{
+  "args": {
+    "data": "dataset/training",
+    "station": "MUN_LosBanos_Laguna.txt",
+    "mode": "week",
+    "out": "results",
+    "lead_min": 168,
+    "lead_max": 288,
+    "history": 24,
+    "stride": 1,
+    "min_pts": [
+      3,
+      5,
+      8,
+      12,
+      20
+    ],
+    "n_eps": 12,
+    "split": [
+      0.7,
+      0.15,
+      0.15
+    ],
+    "val_share": 0.15,
+    "seed": 0,
+    "max_train": 15000,
+    "gap": 3,
+    "max_val": 5000
+  },
+  "features": [
+    "rain",
+    "temp",
+    "rh",
+    "wind_speed",
+    "wind_sin",
+    "wind_cos",
+    "pressure",
+    "hour_sin",
+    "hour_cos"
+  ],
+  "python": "3.15.2",
+  "numpy": "2.5.4",
+  "matplotlib": "3.11.2"
+}
