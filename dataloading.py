@@ -1,7 +1,7 @@
+
 # Data Loading Functions & Preprocessing Functions
 
 # Pull data from the dataset training or testing folders and return a list of tuples containing the filename and the tokenized message content.
-
 
 import os
 import re
@@ -13,6 +13,7 @@ import math
 
 #!. Initialization & Data Loading
 local_drive_path = "/project_SPF170/dataset/training"  # Define the local drive path for output files
+output_file_path = os.path.join(local_drive_path, 'output.txt')  # Define the output file path
 
 # Date,Rainfall(mm),2m Temp(C),Heat Index(C),Relative Humidity(%),Wind Speed(m/s),Wind Direction,Pressure(hPa),Weather
 feature = ['date', 'rainfall', 'temp', 'heat_index', 'humidity', 'wind_speed', 'pressure']
@@ -24,18 +25,57 @@ csv_to_field = {
     'Pressure(hPa)': 'pressure', 'Weather': 'weather',
 }
 
+output_fields = ['date', 'rainfall', 'temp', 'heat_index', 'relhum', 'wind_speed', 'wind_dir', 'pressure', 'weather']
+
 def parse_filename(filename):           # Extract the municipality and province from the filename
-    
-    match = re.search(r'(\d{8})_(\d{6})', filename)
-    if match:
-        date_str = match.group(1)  # YYYYMMDD
-        time_str = match.group(2)  # HHMMSS
-        date_time_str = f"{date_str} {time_str}"
-        date_time_obj = datetime.datetime.strptime(date_time_str, '%Y%m%d %H%M%S')
-        return date_time_obj
-    else:
-        return None
-    
+  match = re.search(r'^MUN_(.+)_([^_]+)$', filename)
+  if match:
+    return match.group(1).replace('_',' '), match.group(2)
+  return None, None
+
+def parse_foldername(foldername):           # Extract the municipality and province from the filename
+  match = re.search(r'_(\d{10})_', foldername)
+  if match:
+    return datetime.datetime.strptime(match.group(1), '%Y%m%d%H')
+  return None
+
+def to_number(value):  # Convert a string from the data to a number (int or float)
+  try:
+    return int(value)
+  except ValueError:
+    return None
+
+def split_weather(code):
+  match = re.match(r'(\d+)([A-Z]*)', code)
+  if match:
+    level = int(match.group(2)) if match.group(2) else None
+    return match.group(1), level, match.group(3)
+  return code, None, None
+
+def read_weather_file(file_path):  # Read a weather data file and return a list of dictionaries
+  rows = []
+  with open(file_path,'r', encoding='utf-8') as csvfile:  # open the file, read in utf-8 encoding and pass contents into a ContentArray
+    reader = csv.DictReader(f)
+    for row in reader:
+      row = {}
+      for csv_col, value in record.items():
+        if csv_col == None:
+           continue
+        value = (value or '').strip()
+        if field == 'date':
+          try:
+             row['date'] = datetime.datetime.strptime(value, '%Y-%m-%d %H:%M:%S') # Tokenize cleaned string/row
+          except ValueError:
+             row['date'] = None
+        elif field_name in feature:
+           row[field_name] = to_number(value)
+        else:
+           row[field_name] = value
+        row['weather_type'], row['weather_level'], row['day_night'] = split_weather(row.get('weather', ''))
+        rows.append(row)
+  return rows
+
+
 def tokenize(directory_path):                                                 # tokenize the contents of a directory; returns list of (filename, tokens)
     tokenized_message_list = []
 
@@ -91,5 +131,3 @@ try:
 except IOError as e:
   print(f"\n NOT SUCCESSFUL. Error writing to file {BoW_outputfile}: {e}")
 
-  drive.flush_and_unmount()
-print("Drive flushed and unmounted. Re-run the mount cell before using Drive again.")
