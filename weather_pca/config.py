@@ -1,9 +1,12 @@
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-TRAIN_ROOT = PROJECT_ROOT / "dataset" / "training" / "201804"
-TRAIN_RUN_GLOB = "weather-outlook_d01_*_pst"
-TEST_DIR = PROJECT_ROOT / "dataset" / "training" / "weather-outlook_d01_2015111208_pst"
+DATASET_ROOT = PROJECT_ROOT / "dataset"
+TRAIN_ROOT = DATASET_ROOT / "training"
+TEST_ROOT = DATASET_ROOT / "testing"
+OUTLOOK_DIR_GLOB = "weather-outlook_d01_*_pst"
+DATA_FILE_PREFIX = "MUN_"
+IGNORED_SUFFIXES = (".json",)
 OUTPUT_DIR = PROJECT_ROOT / "outputs"
 CACHE_DIR = PROJECT_ROOT / "cache"
 

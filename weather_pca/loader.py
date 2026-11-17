@@ -1,5 +1,6 @@
 import collections
 import csv
+import fnmatch
 import logging
 from pathlib import Path
 import numpy as np
@@ -16,37 +17,60 @@ def _list_mun_files(directory: Path, limit_files: int | None) -> list[Path]:
         f
         for f in directory.iterdir()
         if f.is_file()
-        and f.name.startswith("MUN_")
-        and not f.name.endswith(".json")
+        and f.name.startswith(config.DATA_FILE_PREFIX)
+        and not f.name.endswith(config.IGNORED_SUFFIXES)
     )
     if limit_files is not None:
         files = files[:limit_files]
     return files
 
 
+def _discover_split(
+    split_root: Path,
+    outlook_glob: str,
+    limit_files: int | None,
+) -> tuple[list[Path], list[str]]:
+    """Collect MUN_* files from <split_root>/<date>/<outlook_glob>/ in deterministic order."""
+    split_root = Path(split_root)
+    if not split_root.is_dir():
+        raise ValueError(f"Split directory does not exist: {split_root}")
+
+    all_files: list[Path] = []
+    date_names: list[str] = []
+    for date_dir in sorted(split_root.iterdir()):
+        if not date_dir.is_dir():
+            logger.debug("Ignoring non-directory under %s: %s", split_root, date_dir.name)
+            continue
+
+        date_files: list[Path] = []
+        for entry in sorted(date_dir.iterdir()):
+            if not entry.is_dir() or not fnmatch.fnmatchcase(entry.name, outlook_glob):
+                logger.debug("Ignoring non-outlook entry under %s: %s", date_dir, entry.name)
+                continue
+            date_files.extend(_list_mun_files(entry, limit_files))
+
+        if date_files:
+            date_names.append(date_dir.name)
+            all_files.extend(date_files)
+
+    if not all_files:
+        raise ValueError(
+            f"No {config.DATA_FILE_PREFIX}* data files found under {split_root}/<date>/{outlook_glob}"
+        )
+
+    return all_files, date_names
+
+
 def discover_files(
     train_root: Path,
-    run_glob: str,
-    test_dir: Path,
+    test_root: Path,
+    outlook_glob: str = config.OUTLOOK_DIR_GLOB,
     limit_files: int | None = None,
-) -> tuple[list[Path], list[Path]]:
-    """Discover extensionless MUN_* CSV files for train run directories and test directory."""
-    train_root = Path(train_root)
-    test_dir = Path(test_dir)
-
-    train_dirs = sorted(p for p in train_root.glob(run_glob) if p.is_dir())
-    train_files: list[Path] = []
-    for run_dir in train_dirs:
-        train_files.extend(_list_mun_files(run_dir, limit_files))
-
-    if not train_files:
-        raise ValueError(f"No data files found in {train_root}")
-
-    test_files = _list_mun_files(test_dir, limit_files)
-    if not test_files:
-        raise ValueError(f"No data files found in {test_dir}")
-
-    return train_files, test_files
+) -> tuple[list[Path], list[Path], list[str], list[str]]:
+    """Discover extensionless MUN_* CSV files under <split_root>/<date>/<outlook_glob>/."""
+    train_files, train_dates = _discover_split(train_root, outlook_glob, limit_files)
+    test_files, test_dates = _discover_split(test_root, outlook_glob, limit_files)
+    return train_files, test_files, train_dates, test_dates
 
 
 def parse_file(

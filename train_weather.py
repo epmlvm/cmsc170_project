@@ -58,6 +58,7 @@ def _print_report(
     baseline_acc: float,
     cm,
     data_summary: dict[str, int],
+    test_dates: list[str],
 ) -> None:
     print(
         f"=== Final Weights (OvR Perceptron | eta={args.lr} | bias_init={args.bias} "
@@ -78,14 +79,15 @@ def _print_report(
             )
 
     print()
-    print("=== Metrics (Option A: per-perceptron on \u00b11 outputs, unitless) ===")
+    print("=== Metrics ===")
     print("Split  Class  SSE          MSE       MAPE(%)    R2")
     for split_name, split_metrics in (("train", train_metrics), ("test", test_metrics)):
         for row_name in (*config.CLASSES, "Mean"):
             print(_format_metric_row(split_name, row_name, split_metrics.get(row_name)))
 
     print()
-    print("=== OvR Classification (test: 201511) ===")
+    test_label = ", ".join(test_dates) if test_dates else "unknown"
+    print(f"=== OvR Classification (test: {test_label}) ===")
     print(
         f"Accuracy: {test_acc:.6f} | "
         f"Majority baseline ({baseline_cls}): {baseline_acc:.6f}"
@@ -150,10 +152,10 @@ def main(argv: list[str] | None = None) -> int:
     )
 
     try:
-        train_files, test_files = loader.discover_files(
+        train_files, test_files, train_dates, test_dates = loader.discover_files(
             config.TRAIN_ROOT,
-            config.TRAIN_RUN_GLOB,
-            config.TEST_DIR,
+            config.TEST_ROOT,
+            config.OUTLOOK_DIR_GLOB,
             limit_files=args.limit_files,
         )
 
@@ -236,6 +238,7 @@ def main(argv: list[str] | None = None) -> int:
         baseline_acc=baseline_acc,
         cm=cm,
         data_summary=data_summary,
+        test_dates=test_dates,
     )
 
     config.OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -247,6 +250,8 @@ def main(argv: list[str] | None = None) -> int:
             "seed": int(args.seed),
             "include_rainfall": bool(args.include_rainfall),
             "limit_files": None if args.limit_files is None else int(args.limit_files),
+            "train_dates": list(train_dates),
+            "test_dates": list(test_dates),
         },
         "features": feature_names,
         "standardizer": {
