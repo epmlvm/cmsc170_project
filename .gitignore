@@ -1,0 +1,7 @@
+outputs/
+cache/
+__pycache__/
+*.pyc
+tests/
+main.py
+dataset/WEATHER_OUTLOOK_STRUCTURE.md
