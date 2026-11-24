@@ -14,6 +14,14 @@ import math
 #!. Initialization & Data Loading
 local_drive_path = "/project_SPF170/dataset/"  # Define the local drive path for output files
 output_file_path = os.path.join(local_drive_path, 'output.txt')  # Define the output file path
+frontier_path = os.path.join(local_drive_path, 'frontier.json')  # Frontier path
+
+folder_names = {'1': 'training', '2': 'testing', '3': 'implement'} # let user choose what to do
+default_municipality = ('LosBanos', 'Laguna')             # test for LosBanos, Laguna
+num_samples = 10000                                       # n samples for testing
+alpha = 1                                                 # for laplace
+random.seed(170)                                          # reproducible sampling
+
 
 # Date,Rainfall(mm),2m Temp(C),Heat Index(C),Relative Humidity(%),Wind Speed(m/s),Wind Direction,Pressure(hPa),Weather
 feature = ['date', 'rainfall', 'temp', 'heat_index', 'humidity', 'wind_speed', 'pressure']
