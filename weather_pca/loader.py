@@ -120,10 +120,19 @@ def load_split(
     all_rows: list[list[float]] = []
     all_labels: list[str] = []
 
-    for path in files:
+    total_files = len(files)
+    for idx, path in enumerate(files, 1):
         rows, labels = parse_file(path, include_rainfall, counters)
         all_rows.extend(rows)
         all_labels.extend(labels)
+        if idx % 1000 == 0 or idx == total_files:
+            logger.info(
+                "Parsed %d/%d files (%.1f%%) | rows=%d",
+                idx,
+                total_files,
+                100.0 * idx / total_files,
+                len(all_rows),
+            )
 
     counters["range_swaps"] += features.SWAP_COUNTER - swaps_before
 

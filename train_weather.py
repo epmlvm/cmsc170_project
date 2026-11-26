@@ -158,12 +158,19 @@ def main(argv: list[str] | None = None) -> int:
             config.OUTLOOK_DIR_GLOB,
             limit_files=args.limit_files,
         )
+        logger.info(
+            "Discovered %d train files (%s) and %d test files (%s)",
+            len(train_files),
+            ", ".join(train_dates),
+            len(test_files),
+            ", ".join(test_dates),
+        )
 
         cache_file = cache.cache_path_for(
             config.CACHE_DIR, train_files, test_files, args.include_rainfall
         )
         if not args.no_cache and cache_file.is_file():
-            logger.debug("Loading dataset from cache: %s", cache_file)
+            logger.info("Loading dataset from cache: %s", cache_file)
             X_train_raw, y_train, X_test_raw, y_test, counters = cache.load_cached(
                 cache_file
             )
@@ -176,7 +183,7 @@ def main(argv: list[str] | None = None) -> int:
                 test_files, args.include_rainfall, counters
             )
             if not args.no_cache:
-                logger.debug("Saving dataset to cache: %s", cache_file)
+                logger.info("Saving dataset to cache: %s", cache_file)
                 cache.save_cached(
                     cache_file, X_train_raw, y_train, X_test_raw, y_test, counters
                 )

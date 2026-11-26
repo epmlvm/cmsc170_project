@@ -26,6 +26,12 @@ def train_ovr(
             continue
 
         d = np.where(pos_mask, 1, -1)
+        logger.info(
+            "Training class %s (%d positive / %d total)...",
+            cls,
+            int(np.sum(pos_mask)),
+            len(labels),
+        )
         result = perceptron.train_binary(X, d, lr, bias_init, max_epochs, rng)
         if not result["converged"]:
             logger.info(

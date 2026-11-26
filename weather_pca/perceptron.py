@@ -1,4 +1,7 @@
+import logging
 import numpy as np
+
+logger = logging.getLogger(__name__)
 
 
 def sign(v: float) -> int:
@@ -45,6 +48,11 @@ def train_binary(
                 errors += 1
                 w += lr * (di - y) * xi
         if errors == 0:
+            logger.info(
+                "  Epoch %d/%d: converged (0 update errors)",
+                epoch,
+                max_epochs,
+            )
             converged = True
             stopped_epoch = epoch
             break
@@ -52,6 +60,14 @@ def train_binary(
         if e < pocket_err:
             pocket_err = e
             pocket_w = w.copy()
+        logger.info(
+            "  Epoch %d/%d: update_errors=%d, eval_errors=%d, best_pocket_errors=%d",
+            epoch,
+            max_epochs,
+            errors,
+            e,
+            pocket_err,
+        )
 
     final_w = w if converged else pocket_w
     return {
