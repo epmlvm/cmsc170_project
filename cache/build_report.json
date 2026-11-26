@@ -1,0 +1,29 @@
+{
+  "counts": {
+    "missing:heat_index": 2917
+  },
+  "examples": {
+    "missing:heat_index": [
+      "C:\\Users\\James\\Desktop\\cmsc170_project\\dataset\\training\\201707\\weather-outlook_d01_2017072908_pst\\MUN_Catarman_Camiguin:2: '-inf'",
+      "C:\\Users\\James\\Desktop\\cmsc170_project\\dataset\\training\\201707\\weather-outlook_d01_2017072908_pst\\MUN_Catarman_Camiguin:3: '-inf'",
+      "C:\\Users\\James\\Desktop\\cmsc170_project\\dataset\\training\\201707\\weather-outlook_d01_2017072908_pst\\MUN_Catarman_Camiguin:4: '-inf'",
+      "C:\\Users\\James\\Desktop\\cmsc170_project\\dataset\\training\\201707\\weather-outlook_d01_2017072908_pst\\MUN_Catarman_Camiguin:5: '-inf'",
+      "C:\\Users\\James\\Desktop\\cmsc170_project\\dataset\\training\\201707\\weather-outlook_d01_2017072908_pst\\MUN_Catarman_Camiguin:6: '-inf'",
+      "C:\\Users\\James\\Desktop\\cmsc170_project\\dataset\\training\\201707\\weather-outlook_d01_2017072908_pst\\MUN_Catarman_Camiguin:7: '-inf'",
+      "C:\\Users\\James\\Desktop\\cmsc170_project\\dataset\\training\\201707\\weather-outlook_d01_2017072908_pst\\MUN_Mahinog_Camiguin:2: '-inf'",
+      "C:\\Users\\James\\Desktop\\cmsc170_project\\dataset\\training\\201707\\weather-outlook_d01_2017072908_pst\\MUN_Mahinog_Camiguin:3: '-inf'",
+      "C:\\Users\\James\\Desktop\\cmsc170_project\\dataset\\training\\201707\\weather-outlook_d01_2017072908_pst\\MUN_Mahinog_Camiguin:4: '-inf'",
+      "C:\\Users\\James\\Desktop\\cmsc170_project\\dataset\\training\\201707\\weather-outlook_d01_2017072908_pst\\MUN_Mahinog_Camiguin:5: '-inf'",
+      "C:\\Users\\James\\Desktop\\cmsc170_project\\dataset\\training\\201707\\weather-outlook_d01_2017072908_pst\\MUN_Mahinog_Camiguin:6: '-inf'",
+      "C:\\Users\\James\\Desktop\\cmsc170_project\\dataset\\training\\201707\\weather-outlook_d01_2017072908_pst\\MUN_Mahinog_Camiguin:7: '-inf'",
+      "C:\\Users\\James\\Desktop\\cmsc170_project\\dataset\\training\\201707\\weather-outlook_d01_2017072908_pst\\MUN_Mambajao_Camiguin:2: '-inf'",
+      "C:\\Users\\James\\Desktop\\cmsc170_project\\dataset\\training\\201707\\weather-outlook_d01_2017072908_pst\\MUN_Mambajao_Camiguin:3: '-inf'",
+      "C:\\Users\\James\\Desktop\\cmsc170_project\\dataset\\training\\201707\\weather-outlook_d01_2017072908_pst\\MUN_Mambajao_Camiguin:4: '-inf'",
+      "C:\\Users\\James\\Desktop\\cmsc170_project\\dataset\\training\\201707\\weather-outlook_d01_2017072908_pst\\MUN_Mambajao_Camiguin:5: '-inf'",
+      "C:\\Users\\James\\Desktop\\cmsc170_project\\dataset\\training\\201707\\weather-outlook_d01_2017072908_pst\\MUN_Mambajao_Camiguin:6: '-inf'",
+      "C:\\Users\\James\\Desktop\\cmsc170_project\\dataset\\training\\201707\\weather-outlook_d01_2017072908_pst\\MUN_Mambajao_Camiguin:7: '-inf'",
+      "C:\\Users\\James\\Desktop\\cmsc170_project\\dataset\\training\\201707\\weather-outlook_d01_2017072908_pst\\MUN_SanJuan_Siquijor:6: '-inf'",
+      "C:\\Users\\James\\Desktop\\cmsc170_project\\dataset\\training\\201707\\weather-outlook_d01_2017072908_pst\\MUN_SanJuan_Siquijor:7: '-inf'"
+    ]
+  }
+}
