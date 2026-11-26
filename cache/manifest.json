@@ -1,0 +1,2235 @@
+{
+  "format": "cmsc170-weather-npz",
+  "schema_version": 1,
+  "created": "2026-11-26T18:12:37+08:00",
+  "source": "C:/Users/James/Desktop/cmsc170_project/dataset",
+  "source_format": "csv",
+  "partial": false,
+  "numeric_features": [
+    "rainfall",
+    "temp",
+    "heat_index",
+    "relhum",
+    "wind_speed",
+    "pressure"
+  ],
+  "pair_axis": [
+    "min",
+    "max"
+  ],
+  "dtype": "float32",
+  "units": "date:PST, rainfall:mm, temp:C, heat_index:C, relhum:%, wind_speed:m/s, wind_dir:None, pressure:hPa, weather:None",
+  "vocab": {
+    "wind_dir": [
+      "N",
+      "NNE",
+      "NE",
+      "ENE",
+      "E",
+      "ESE",
+      "SE",
+      "SSE",
+      "S",
+      "SSW",
+      "SW",
+      "WSW",
+      "W",
+      "WNW",
+      "NW",
+      "NNW"
+    ],
+    "weather": [
+      "Clear",
+      "Cloud",
+      "Rain"
+    ]
+  },
+  "runs": [
+    {
+      "split": "training",
+      "month": "201511",
+      "run": "weather-outlook_d01_2015111208_pst",
+      "path": "training/201511/weather-outlook_d01_2015111208_pst.npz",
+      "init_time": "2015-11-12T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 76
+    },
+    {
+      "split": "training",
+      "month": "201511",
+      "run": "weather-outlook_d01_2015111414_pst",
+      "path": "training/201511/weather-outlook_d01_2015111414_pst.npz",
+      "init_time": "2015-11-14T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 76
+    },
+    {
+      "split": "training",
+      "month": "201511",
+      "run": "weather-outlook_d01_2015111420_pst",
+      "path": "training/201511/weather-outlook_d01_2015111420_pst.npz",
+      "init_time": "2015-11-14T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 76
+    },
+    {
+      "split": "training",
+      "month": "201511",
+      "run": "weather-outlook_d01_2015111508_pst",
+      "path": "training/201511/weather-outlook_d01_2015111508_pst.npz",
+      "init_time": "2015-11-15T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 76
+    },
+    {
+      "split": "training",
+      "month": "201511",
+      "run": "weather-outlook_d01_2015111514_pst",
+      "path": "training/201511/weather-outlook_d01_2015111514_pst.npz",
+      "init_time": "2015-11-15T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 76
+    },
+    {
+      "split": "training",
+      "month": "201511",
+      "run": "weather-outlook_d01_2015111602_pst",
+      "path": "training/201511/weather-outlook_d01_2015111602_pst.npz",
+      "init_time": "2015-11-16T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 76
+    },
+    {
+      "split": "training",
+      "month": "201511",
+      "run": "weather-outlook_d01_2015111608_pst",
+      "path": "training/201511/weather-outlook_d01_2015111608_pst.npz",
+      "init_time": "2015-11-16T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 76
+    },
+    {
+      "split": "training",
+      "month": "201511",
+      "run": "weather-outlook_d01_2015111614_pst",
+      "path": "training/201511/weather-outlook_d01_2015111614_pst.npz",
+      "init_time": "2015-11-16T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 76
+    },
+    {
+      "split": "training",
+      "month": "201511",
+      "run": "weather-outlook_d01_2015111620_pst",
+      "path": "training/201511/weather-outlook_d01_2015111620_pst.npz",
+      "init_time": "2015-11-16T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 76
+    },
+    {
+      "split": "training",
+      "month": "201511",
+      "run": "weather-outlook_d01_2015111702_pst",
+      "path": "training/201511/weather-outlook_d01_2015111702_pst.npz",
+      "init_time": "2015-11-17T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 76
+    },
+    {
+      "split": "training",
+      "month": "201511",
+      "run": "weather-outlook_d01_2015111708_pst",
+      "path": "training/201511/weather-outlook_d01_2015111708_pst.npz",
+      "init_time": "2015-11-17T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 76
+    },
+    {
+      "split": "training",
+      "month": "201511",
+      "run": "weather-outlook_d01_2015111714_pst",
+      "path": "training/201511/weather-outlook_d01_2015111714_pst.npz",
+      "init_time": "2015-11-17T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 76
+    },
+    {
+      "split": "training",
+      "month": "201511",
+      "run": "weather-outlook_d01_2015112314_pst",
+      "path": "training/201511/weather-outlook_d01_2015112314_pst.npz",
+      "init_time": "2015-11-23T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 76
+    },
+    {
+      "split": "training",
+      "month": "201511",
+      "run": "weather-outlook_d01_2015112320_pst",
+      "path": "training/201511/weather-outlook_d01_2015112320_pst.npz",
+      "init_time": "2015-11-23T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 76
+    },
+    {
+      "split": "training",
+      "month": "201511",
+      "run": "weather-outlook_d01_2015112402_pst",
+      "path": "training/201511/weather-outlook_d01_2015112402_pst.npz",
+      "init_time": "2015-11-24T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 76
+    },
+    {
+      "split": "training",
+      "month": "201511",
+      "run": "weather-outlook_d01_2015112408_pst",
+      "path": "training/201511/weather-outlook_d01_2015112408_pst.npz",
+      "init_time": "2015-11-24T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 76
+    },
+    {
+      "split": "training",
+      "month": "201511",
+      "run": "weather-outlook_d01_2015112502_pst",
+      "path": "training/201511/weather-outlook_d01_2015112502_pst.npz",
+      "init_time": "2015-11-25T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 76
+    },
+    {
+      "split": "training",
+      "month": "201511",
+      "run": "weather-outlook_d01_2015112708_pst",
+      "path": "training/201511/weather-outlook_d01_2015112708_pst.npz",
+      "init_time": "2015-11-27T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201511",
+      "run": "weather-outlook_d01_2015112714_pst",
+      "path": "training/201511/weather-outlook_d01_2015112714_pst.npz",
+      "init_time": "2015-11-27T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 76
+    },
+    {
+      "split": "training",
+      "month": "201511",
+      "run": "weather-outlook_d01_2015112720_pst",
+      "path": "training/201511/weather-outlook_d01_2015112720_pst.npz",
+      "init_time": "2015-11-27T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 76
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017050108_pst",
+      "path": "training/201705/weather-outlook_d01_2017050108_pst.npz",
+      "init_time": "2017-05-01T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017050202_pst",
+      "path": "training/201705/weather-outlook_d01_2017050202_pst.npz",
+      "init_time": "2017-05-02T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017050208_pst",
+      "path": "training/201705/weather-outlook_d01_2017050208_pst.npz",
+      "init_time": "2017-05-02T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017050214_pst",
+      "path": "training/201705/weather-outlook_d01_2017050214_pst.npz",
+      "init_time": "2017-05-02T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017050302_pst",
+      "path": "training/201705/weather-outlook_d01_2017050302_pst.npz",
+      "init_time": "2017-05-03T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017050308_pst",
+      "path": "training/201705/weather-outlook_d01_2017050308_pst.npz",
+      "init_time": "2017-05-03T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017050508_pst",
+      "path": "training/201705/weather-outlook_d01_2017050508_pst.npz",
+      "init_time": "2017-05-05T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017050514_pst",
+      "path": "training/201705/weather-outlook_d01_2017050514_pst.npz",
+      "init_time": "2017-05-05T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017050520_pst",
+      "path": "training/201705/weather-outlook_d01_2017050520_pst.npz",
+      "init_time": "2017-05-05T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017050602_pst",
+      "path": "training/201705/weather-outlook_d01_2017050602_pst.npz",
+      "init_time": "2017-05-06T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017050608_pst",
+      "path": "training/201705/weather-outlook_d01_2017050608_pst.npz",
+      "init_time": "2017-05-06T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017050614_pst",
+      "path": "training/201705/weather-outlook_d01_2017050614_pst.npz",
+      "init_time": "2017-05-06T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017050802_pst",
+      "path": "training/201705/weather-outlook_d01_2017050802_pst.npz",
+      "init_time": "2017-05-08T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017050808_pst",
+      "path": "training/201705/weather-outlook_d01_2017050808_pst.npz",
+      "init_time": "2017-05-08T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017050814_pst",
+      "path": "training/201705/weather-outlook_d01_2017050814_pst.npz",
+      "init_time": "2017-05-08T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017050902_pst",
+      "path": "training/201705/weather-outlook_d01_2017050902_pst.npz",
+      "init_time": "2017-05-09T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017050914_pst",
+      "path": "training/201705/weather-outlook_d01_2017050914_pst.npz",
+      "init_time": "2017-05-09T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017051002_pst",
+      "path": "training/201705/weather-outlook_d01_2017051002_pst.npz",
+      "init_time": "2017-05-10T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017051008_pst",
+      "path": "training/201705/weather-outlook_d01_2017051008_pst.npz",
+      "init_time": "2017-05-10T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017051014_pst",
+      "path": "training/201705/weather-outlook_d01_2017051014_pst.npz",
+      "init_time": "2017-05-10T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017051020_pst",
+      "path": "training/201705/weather-outlook_d01_2017051020_pst.npz",
+      "init_time": "2017-05-10T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017051220_pst",
+      "path": "training/201705/weather-outlook_d01_2017051220_pst.npz",
+      "init_time": "2017-05-12T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017051302_pst",
+      "path": "training/201705/weather-outlook_d01_2017051302_pst.npz",
+      "init_time": "2017-05-13T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017051308_pst",
+      "path": "training/201705/weather-outlook_d01_2017051308_pst.npz",
+      "init_time": "2017-05-13T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017051314_pst",
+      "path": "training/201705/weather-outlook_d01_2017051314_pst.npz",
+      "init_time": "2017-05-13T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017051320_pst",
+      "path": "training/201705/weather-outlook_d01_2017051320_pst.npz",
+      "init_time": "2017-05-13T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017051402_pst",
+      "path": "training/201705/weather-outlook_d01_2017051402_pst.npz",
+      "init_time": "2017-05-14T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017051408_pst",
+      "path": "training/201705/weather-outlook_d01_2017051408_pst.npz",
+      "init_time": "2017-05-14T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017051414_pst",
+      "path": "training/201705/weather-outlook_d01_2017051414_pst.npz",
+      "init_time": "2017-05-14T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017051420_pst",
+      "path": "training/201705/weather-outlook_d01_2017051420_pst.npz",
+      "init_time": "2017-05-14T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017051502_pst",
+      "path": "training/201705/weather-outlook_d01_2017051502_pst.npz",
+      "init_time": "2017-05-15T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017051508_pst",
+      "path": "training/201705/weather-outlook_d01_2017051508_pst.npz",
+      "init_time": "2017-05-15T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017051514_pst",
+      "path": "training/201705/weather-outlook_d01_2017051514_pst.npz",
+      "init_time": "2017-05-15T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017051608_pst",
+      "path": "training/201705/weather-outlook_d01_2017051608_pst.npz",
+      "init_time": "2017-05-16T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017051614_pst",
+      "path": "training/201705/weather-outlook_d01_2017051614_pst.npz",
+      "init_time": "2017-05-16T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017051620_pst",
+      "path": "training/201705/weather-outlook_d01_2017051620_pst.npz",
+      "init_time": "2017-05-16T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017051702_pst",
+      "path": "training/201705/weather-outlook_d01_2017051702_pst.npz",
+      "init_time": "2017-05-17T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017051708_pst",
+      "path": "training/201705/weather-outlook_d01_2017051708_pst.npz",
+      "init_time": "2017-05-17T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017051714_pst",
+      "path": "training/201705/weather-outlook_d01_2017051714_pst.npz",
+      "init_time": "2017-05-17T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017051720_pst",
+      "path": "training/201705/weather-outlook_d01_2017051720_pst.npz",
+      "init_time": "2017-05-17T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017051802_pst",
+      "path": "training/201705/weather-outlook_d01_2017051802_pst.npz",
+      "init_time": "2017-05-18T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017051808_pst",
+      "path": "training/201705/weather-outlook_d01_2017051808_pst.npz",
+      "init_time": "2017-05-18T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017052014_pst",
+      "path": "training/201705/weather-outlook_d01_2017052014_pst.npz",
+      "init_time": "2017-05-20T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017052020_pst",
+      "path": "training/201705/weather-outlook_d01_2017052020_pst.npz",
+      "init_time": "2017-05-20T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017052102_pst",
+      "path": "training/201705/weather-outlook_d01_2017052102_pst.npz",
+      "init_time": "2017-05-21T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017052108_pst",
+      "path": "training/201705/weather-outlook_d01_2017052108_pst.npz",
+      "init_time": "2017-05-21T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017052114_pst",
+      "path": "training/201705/weather-outlook_d01_2017052114_pst.npz",
+      "init_time": "2017-05-21T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017052120_pst",
+      "path": "training/201705/weather-outlook_d01_2017052120_pst.npz",
+      "init_time": "2017-05-21T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017052202_pst",
+      "path": "training/201705/weather-outlook_d01_2017052202_pst.npz",
+      "init_time": "2017-05-22T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017052208_pst",
+      "path": "training/201705/weather-outlook_d01_2017052208_pst.npz",
+      "init_time": "2017-05-22T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017052214_pst",
+      "path": "training/201705/weather-outlook_d01_2017052214_pst.npz",
+      "init_time": "2017-05-22T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017052220_pst",
+      "path": "training/201705/weather-outlook_d01_2017052220_pst.npz",
+      "init_time": "2017-05-22T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017052302_pst",
+      "path": "training/201705/weather-outlook_d01_2017052302_pst.npz",
+      "init_time": "2017-05-23T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017052308_pst",
+      "path": "training/201705/weather-outlook_d01_2017052308_pst.npz",
+      "init_time": "2017-05-23T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017052314_pst",
+      "path": "training/201705/weather-outlook_d01_2017052314_pst.npz",
+      "init_time": "2017-05-23T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017052320_pst",
+      "path": "training/201705/weather-outlook_d01_2017052320_pst.npz",
+      "init_time": "2017-05-23T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017052402_pst",
+      "path": "training/201705/weather-outlook_d01_2017052402_pst.npz",
+      "init_time": "2017-05-24T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017052408_pst",
+      "path": "training/201705/weather-outlook_d01_2017052408_pst.npz",
+      "init_time": "2017-05-24T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017052414_pst",
+      "path": "training/201705/weather-outlook_d01_2017052414_pst.npz",
+      "init_time": "2017-05-24T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017052420_pst",
+      "path": "training/201705/weather-outlook_d01_2017052420_pst.npz",
+      "init_time": "2017-05-24T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017052502_pst",
+      "path": "training/201705/weather-outlook_d01_2017052502_pst.npz",
+      "init_time": "2017-05-25T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017052508_pst",
+      "path": "training/201705/weather-outlook_d01_2017052508_pst.npz",
+      "init_time": "2017-05-25T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017052514_pst",
+      "path": "training/201705/weather-outlook_d01_2017052514_pst.npz",
+      "init_time": "2017-05-25T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017052602_pst",
+      "path": "training/201705/weather-outlook_d01_2017052602_pst.npz",
+      "init_time": "2017-05-26T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017052608_pst",
+      "path": "training/201705/weather-outlook_d01_2017052608_pst.npz",
+      "init_time": "2017-05-26T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017052620_pst",
+      "path": "training/201705/weather-outlook_d01_2017052620_pst.npz",
+      "init_time": "2017-05-26T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017052702_pst",
+      "path": "training/201705/weather-outlook_d01_2017052702_pst.npz",
+      "init_time": "2017-05-27T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017052708_pst",
+      "path": "training/201705/weather-outlook_d01_2017052708_pst.npz",
+      "init_time": "2017-05-27T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017052714_pst",
+      "path": "training/201705/weather-outlook_d01_2017052714_pst.npz",
+      "init_time": "2017-05-27T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017052720_pst",
+      "path": "training/201705/weather-outlook_d01_2017052720_pst.npz",
+      "init_time": "2017-05-27T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017052802_pst",
+      "path": "training/201705/weather-outlook_d01_2017052802_pst.npz",
+      "init_time": "2017-05-28T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017052808_pst",
+      "path": "training/201705/weather-outlook_d01_2017052808_pst.npz",
+      "init_time": "2017-05-28T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017052814_pst",
+      "path": "training/201705/weather-outlook_d01_2017052814_pst.npz",
+      "init_time": "2017-05-28T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017052914_pst",
+      "path": "training/201705/weather-outlook_d01_2017052914_pst.npz",
+      "init_time": "2017-05-29T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017052920_pst",
+      "path": "training/201705/weather-outlook_d01_2017052920_pst.npz",
+      "init_time": "2017-05-29T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201705",
+      "run": "weather-outlook_d01_2017053114_pst",
+      "path": "training/201705/weather-outlook_d01_2017053114_pst.npz",
+      "init_time": "2017-05-31T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017060602_pst",
+      "path": "training/201706/weather-outlook_d01_2017060602_pst.npz",
+      "init_time": "2017-06-06T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017060608_pst",
+      "path": "training/201706/weather-outlook_d01_2017060608_pst.npz",
+      "init_time": "2017-06-06T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017060614_pst",
+      "path": "training/201706/weather-outlook_d01_2017060614_pst.npz",
+      "init_time": "2017-06-06T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017060620_pst",
+      "path": "training/201706/weather-outlook_d01_2017060620_pst.npz",
+      "init_time": "2017-06-06T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017060708_pst",
+      "path": "training/201706/weather-outlook_d01_2017060708_pst.npz",
+      "init_time": "2017-06-07T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017060714_pst",
+      "path": "training/201706/weather-outlook_d01_2017060714_pst.npz",
+      "init_time": "2017-06-07T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017060720_pst",
+      "path": "training/201706/weather-outlook_d01_2017060720_pst.npz",
+      "init_time": "2017-06-07T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017060802_pst",
+      "path": "training/201706/weather-outlook_d01_2017060802_pst.npz",
+      "init_time": "2017-06-08T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017060808_pst",
+      "path": "training/201706/weather-outlook_d01_2017060808_pst.npz",
+      "init_time": "2017-06-08T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017060820_pst",
+      "path": "training/201706/weather-outlook_d01_2017060820_pst.npz",
+      "init_time": "2017-06-08T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017060902_pst",
+      "path": "training/201706/weather-outlook_d01_2017060902_pst.npz",
+      "init_time": "2017-06-09T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017061302_pst",
+      "path": "training/201706/weather-outlook_d01_2017061302_pst.npz",
+      "init_time": "2017-06-13T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017061308_pst",
+      "path": "training/201706/weather-outlook_d01_2017061308_pst.npz",
+      "init_time": "2017-06-13T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017061314_pst",
+      "path": "training/201706/weather-outlook_d01_2017061314_pst.npz",
+      "init_time": "2017-06-13T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017061320_pst",
+      "path": "training/201706/weather-outlook_d01_2017061320_pst.npz",
+      "init_time": "2017-06-13T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017061402_pst",
+      "path": "training/201706/weather-outlook_d01_2017061402_pst.npz",
+      "init_time": "2017-06-14T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017061408_pst",
+      "path": "training/201706/weather-outlook_d01_2017061408_pst.npz",
+      "init_time": "2017-06-14T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017061414_pst",
+      "path": "training/201706/weather-outlook_d01_2017061414_pst.npz",
+      "init_time": "2017-06-14T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017061502_pst",
+      "path": "training/201706/weather-outlook_d01_2017061502_pst.npz",
+      "init_time": "2017-06-15T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017061508_pst",
+      "path": "training/201706/weather-outlook_d01_2017061508_pst.npz",
+      "init_time": "2017-06-15T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017061514_pst",
+      "path": "training/201706/weather-outlook_d01_2017061514_pst.npz",
+      "init_time": "2017-06-15T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017061602_pst",
+      "path": "training/201706/weather-outlook_d01_2017061602_pst.npz",
+      "init_time": "2017-06-16T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017061608_pst",
+      "path": "training/201706/weather-outlook_d01_2017061608_pst.npz",
+      "init_time": "2017-06-16T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017061614_pst",
+      "path": "training/201706/weather-outlook_d01_2017061614_pst.npz",
+      "init_time": "2017-06-16T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017061620_pst",
+      "path": "training/201706/weather-outlook_d01_2017061620_pst.npz",
+      "init_time": "2017-06-16T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017061702_pst",
+      "path": "training/201706/weather-outlook_d01_2017061702_pst.npz",
+      "init_time": "2017-06-17T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017061708_pst",
+      "path": "training/201706/weather-outlook_d01_2017061708_pst.npz",
+      "init_time": "2017-06-17T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017061714_pst",
+      "path": "training/201706/weather-outlook_d01_2017061714_pst.npz",
+      "init_time": "2017-06-17T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017061720_pst",
+      "path": "training/201706/weather-outlook_d01_2017061720_pst.npz",
+      "init_time": "2017-06-17T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017061802_pst",
+      "path": "training/201706/weather-outlook_d01_2017061802_pst.npz",
+      "init_time": "2017-06-18T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017061808_pst",
+      "path": "training/201706/weather-outlook_d01_2017061808_pst.npz",
+      "init_time": "2017-06-18T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017061814_pst",
+      "path": "training/201706/weather-outlook_d01_2017061814_pst.npz",
+      "init_time": "2017-06-18T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017061820_pst",
+      "path": "training/201706/weather-outlook_d01_2017061820_pst.npz",
+      "init_time": "2017-06-18T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017061902_pst",
+      "path": "training/201706/weather-outlook_d01_2017061902_pst.npz",
+      "init_time": "2017-06-19T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017061914_pst",
+      "path": "training/201706/weather-outlook_d01_2017061914_pst.npz",
+      "init_time": "2017-06-19T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017061920_pst",
+      "path": "training/201706/weather-outlook_d01_2017061920_pst.npz",
+      "init_time": "2017-06-19T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017062008_pst",
+      "path": "training/201706/weather-outlook_d01_2017062008_pst.npz",
+      "init_time": "2017-06-20T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017062014_pst",
+      "path": "training/201706/weather-outlook_d01_2017062014_pst.npz",
+      "init_time": "2017-06-20T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017062020_pst",
+      "path": "training/201706/weather-outlook_d01_2017062020_pst.npz",
+      "init_time": "2017-06-20T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017062102_pst",
+      "path": "training/201706/weather-outlook_d01_2017062102_pst.npz",
+      "init_time": "2017-06-21T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017062108_pst",
+      "path": "training/201706/weather-outlook_d01_2017062108_pst.npz",
+      "init_time": "2017-06-21T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017062114_pst",
+      "path": "training/201706/weather-outlook_d01_2017062114_pst.npz",
+      "init_time": "2017-06-21T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017062120_pst",
+      "path": "training/201706/weather-outlook_d01_2017062120_pst.npz",
+      "init_time": "2017-06-21T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017062202_pst",
+      "path": "training/201706/weather-outlook_d01_2017062202_pst.npz",
+      "init_time": "2017-06-22T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017062208_pst",
+      "path": "training/201706/weather-outlook_d01_2017062208_pst.npz",
+      "init_time": "2017-06-22T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017062214_pst",
+      "path": "training/201706/weather-outlook_d01_2017062214_pst.npz",
+      "init_time": "2017-06-22T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017062302_pst",
+      "path": "training/201706/weather-outlook_d01_2017062302_pst.npz",
+      "init_time": "2017-06-23T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017062708_pst",
+      "path": "training/201706/weather-outlook_d01_2017062708_pst.npz",
+      "init_time": "2017-06-27T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017062714_pst",
+      "path": "training/201706/weather-outlook_d01_2017062714_pst.npz",
+      "init_time": "2017-06-27T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017062808_pst",
+      "path": "training/201706/weather-outlook_d01_2017062808_pst.npz",
+      "init_time": "2017-06-28T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017062814_pst",
+      "path": "training/201706/weather-outlook_d01_2017062814_pst.npz",
+      "init_time": "2017-06-28T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017062820_pst",
+      "path": "training/201706/weather-outlook_d01_2017062820_pst.npz",
+      "init_time": "2017-06-28T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017062902_pst",
+      "path": "training/201706/weather-outlook_d01_2017062902_pst.npz",
+      "init_time": "2017-06-29T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017062908_pst",
+      "path": "training/201706/weather-outlook_d01_2017062908_pst.npz",
+      "init_time": "2017-06-29T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017062914_pst",
+      "path": "training/201706/weather-outlook_d01_2017062914_pst.npz",
+      "init_time": "2017-06-29T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017062920_pst",
+      "path": "training/201706/weather-outlook_d01_2017062920_pst.npz",
+      "init_time": "2017-06-29T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017063002_pst",
+      "path": "training/201706/weather-outlook_d01_2017063002_pst.npz",
+      "init_time": "2017-06-30T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017063008_pst",
+      "path": "training/201706/weather-outlook_d01_2017063008_pst.npz",
+      "init_time": "2017-06-30T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201706",
+      "run": "weather-outlook_d01_2017063020_pst",
+      "path": "training/201706/weather-outlook_d01_2017063020_pst.npz",
+      "init_time": "2017-06-30T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017070108_pst",
+      "path": "training/201707/weather-outlook_d01_2017070108_pst.npz",
+      "init_time": "2017-07-01T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017070114_pst",
+      "path": "training/201707/weather-outlook_d01_2017070114_pst.npz",
+      "init_time": "2017-07-01T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017070120_pst",
+      "path": "training/201707/weather-outlook_d01_2017070120_pst.npz",
+      "init_time": "2017-07-01T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017070202_pst",
+      "path": "training/201707/weather-outlook_d01_2017070202_pst.npz",
+      "init_time": "2017-07-02T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017070208_pst",
+      "path": "training/201707/weather-outlook_d01_2017070208_pst.npz",
+      "init_time": "2017-07-02T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017070220_pst",
+      "path": "training/201707/weather-outlook_d01_2017070220_pst.npz",
+      "init_time": "2017-07-02T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017070302_pst",
+      "path": "training/201707/weather-outlook_d01_2017070302_pst.npz",
+      "init_time": "2017-07-03T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017070308_pst",
+      "path": "training/201707/weather-outlook_d01_2017070308_pst.npz",
+      "init_time": "2017-07-03T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017070314_pst",
+      "path": "training/201707/weather-outlook_d01_2017070314_pst.npz",
+      "init_time": "2017-07-03T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017070320_pst",
+      "path": "training/201707/weather-outlook_d01_2017070320_pst.npz",
+      "init_time": "2017-07-03T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017070402_pst",
+      "path": "training/201707/weather-outlook_d01_2017070402_pst.npz",
+      "init_time": "2017-07-04T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017070408_pst",
+      "path": "training/201707/weather-outlook_d01_2017070408_pst.npz",
+      "init_time": "2017-07-04T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017070414_pst",
+      "path": "training/201707/weather-outlook_d01_2017070414_pst.npz",
+      "init_time": "2017-07-04T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017070420_pst",
+      "path": "training/201707/weather-outlook_d01_2017070420_pst.npz",
+      "init_time": "2017-07-04T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017070502_pst",
+      "path": "training/201707/weather-outlook_d01_2017070502_pst.npz",
+      "init_time": "2017-07-05T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017070508_pst",
+      "path": "training/201707/weather-outlook_d01_2017070508_pst.npz",
+      "init_time": "2017-07-05T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017070514_pst",
+      "path": "training/201707/weather-outlook_d01_2017070514_pst.npz",
+      "init_time": "2017-07-05T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017070608_pst",
+      "path": "training/201707/weather-outlook_d01_2017070608_pst.npz",
+      "init_time": "2017-07-06T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017070614_pst",
+      "path": "training/201707/weather-outlook_d01_2017070614_pst.npz",
+      "init_time": "2017-07-06T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017070620_pst",
+      "path": "training/201707/weather-outlook_d01_2017070620_pst.npz",
+      "init_time": "2017-07-06T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017070702_pst",
+      "path": "training/201707/weather-outlook_d01_2017070702_pst.npz",
+      "init_time": "2017-07-07T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017070708_pst",
+      "path": "training/201707/weather-outlook_d01_2017070708_pst.npz",
+      "init_time": "2017-07-07T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017070714_pst",
+      "path": "training/201707/weather-outlook_d01_2017070714_pst.npz",
+      "init_time": "2017-07-07T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017070814_pst",
+      "path": "training/201707/weather-outlook_d01_2017070814_pst.npz",
+      "init_time": "2017-07-08T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017070820_pst",
+      "path": "training/201707/weather-outlook_d01_2017070820_pst.npz",
+      "init_time": "2017-07-08T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017070908_pst",
+      "path": "training/201707/weather-outlook_d01_2017070908_pst.npz",
+      "init_time": "2017-07-09T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017071008_pst",
+      "path": "training/201707/weather-outlook_d01_2017071008_pst.npz",
+      "init_time": "2017-07-10T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017071014_pst",
+      "path": "training/201707/weather-outlook_d01_2017071014_pst.npz",
+      "init_time": "2017-07-10T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017071020_pst",
+      "path": "training/201707/weather-outlook_d01_2017071020_pst.npz",
+      "init_time": "2017-07-10T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017071120_pst",
+      "path": "training/201707/weather-outlook_d01_2017071120_pst.npz",
+      "init_time": "2017-07-11T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017071202_pst",
+      "path": "training/201707/weather-outlook_d01_2017071202_pst.npz",
+      "init_time": "2017-07-12T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017071208_pst",
+      "path": "training/201707/weather-outlook_d01_2017071208_pst.npz",
+      "init_time": "2017-07-12T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017071214_pst",
+      "path": "training/201707/weather-outlook_d01_2017071214_pst.npz",
+      "init_time": "2017-07-12T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017071220_pst",
+      "path": "training/201707/weather-outlook_d01_2017071220_pst.npz",
+      "init_time": "2017-07-12T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017071302_pst",
+      "path": "training/201707/weather-outlook_d01_2017071302_pst.npz",
+      "init_time": "2017-07-13T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017071308_pst",
+      "path": "training/201707/weather-outlook_d01_2017071308_pst.npz",
+      "init_time": "2017-07-13T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017071314_pst",
+      "path": "training/201707/weather-outlook_d01_2017071314_pst.npz",
+      "init_time": "2017-07-13T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017071320_pst",
+      "path": "training/201707/weather-outlook_d01_2017071320_pst.npz",
+      "init_time": "2017-07-13T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017071402_pst",
+      "path": "training/201707/weather-outlook_d01_2017071402_pst.npz",
+      "init_time": "2017-07-14T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017071408_pst",
+      "path": "training/201707/weather-outlook_d01_2017071408_pst.npz",
+      "init_time": "2017-07-14T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017071414_pst",
+      "path": "training/201707/weather-outlook_d01_2017071414_pst.npz",
+      "init_time": "2017-07-14T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017071420_pst",
+      "path": "training/201707/weather-outlook_d01_2017071420_pst.npz",
+      "init_time": "2017-07-14T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017071502_pst",
+      "path": "training/201707/weather-outlook_d01_2017071502_pst.npz",
+      "init_time": "2017-07-15T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017071514_pst",
+      "path": "training/201707/weather-outlook_d01_2017071514_pst.npz",
+      "init_time": "2017-07-15T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017071520_pst",
+      "path": "training/201707/weather-outlook_d01_2017071520_pst.npz",
+      "init_time": "2017-07-15T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017071608_pst",
+      "path": "training/201707/weather-outlook_d01_2017071608_pst.npz",
+      "init_time": "2017-07-16T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017071614_pst",
+      "path": "training/201707/weather-outlook_d01_2017071614_pst.npz",
+      "init_time": "2017-07-16T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017071620_pst",
+      "path": "training/201707/weather-outlook_d01_2017071620_pst.npz",
+      "init_time": "2017-07-16T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017071702_pst",
+      "path": "training/201707/weather-outlook_d01_2017071702_pst.npz",
+      "init_time": "2017-07-17T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017071708_pst",
+      "path": "training/201707/weather-outlook_d01_2017071708_pst.npz",
+      "init_time": "2017-07-17T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017071714_pst",
+      "path": "training/201707/weather-outlook_d01_2017071714_pst.npz",
+      "init_time": "2017-07-17T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017071720_pst",
+      "path": "training/201707/weather-outlook_d01_2017071720_pst.npz",
+      "init_time": "2017-07-17T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017071802_pst",
+      "path": "training/201707/weather-outlook_d01_2017071802_pst.npz",
+      "init_time": "2017-07-18T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017071808_pst",
+      "path": "training/201707/weather-outlook_d01_2017071808_pst.npz",
+      "init_time": "2017-07-18T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017071814_pst",
+      "path": "training/201707/weather-outlook_d01_2017071814_pst.npz",
+      "init_time": "2017-07-18T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017071820_pst",
+      "path": "training/201707/weather-outlook_d01_2017071820_pst.npz",
+      "init_time": "2017-07-18T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017071902_pst",
+      "path": "training/201707/weather-outlook_d01_2017071902_pst.npz",
+      "init_time": "2017-07-19T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017071908_pst",
+      "path": "training/201707/weather-outlook_d01_2017071908_pst.npz",
+      "init_time": "2017-07-19T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017071914_pst",
+      "path": "training/201707/weather-outlook_d01_2017071914_pst.npz",
+      "init_time": "2017-07-19T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017072814_pst",
+      "path": "training/201707/weather-outlook_d01_2017072814_pst.npz",
+      "init_time": "2017-07-28T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017072820_pst",
+      "path": "training/201707/weather-outlook_d01_2017072820_pst.npz",
+      "init_time": "2017-07-28T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017072902_pst",
+      "path": "training/201707/weather-outlook_d01_2017072902_pst.npz",
+      "init_time": "2017-07-29T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017072908_pst",
+      "path": "training/201707/weather-outlook_d01_2017072908_pst.npz",
+      "init_time": "2017-07-29T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017072914_pst",
+      "path": "training/201707/weather-outlook_d01_2017072914_pst.npz",
+      "init_time": "2017-07-29T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017072920_pst",
+      "path": "training/201707/weather-outlook_d01_2017072920_pst.npz",
+      "init_time": "2017-07-29T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017073002_pst",
+      "path": "training/201707/weather-outlook_d01_2017073002_pst.npz",
+      "init_time": "2017-07-30T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017073008_pst",
+      "path": "training/201707/weather-outlook_d01_2017073008_pst.npz",
+      "init_time": "2017-07-30T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017073014_pst",
+      "path": "training/201707/weather-outlook_d01_2017073014_pst.npz",
+      "init_time": "2017-07-30T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017073020_pst",
+      "path": "training/201707/weather-outlook_d01_2017073020_pst.npz",
+      "init_time": "2017-07-30T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017073102_pst",
+      "path": "training/201707/weather-outlook_d01_2017073102_pst.npz",
+      "init_time": "2017-07-31T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017073108_pst",
+      "path": "training/201707/weather-outlook_d01_2017073108_pst.npz",
+      "init_time": "2017-07-31T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017073114_pst",
+      "path": "training/201707/weather-outlook_d01_2017073114_pst.npz",
+      "init_time": "2017-07-31T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "training",
+      "month": "201707",
+      "run": "weather-outlook_d01_2017073120_pst",
+      "path": "training/201707/weather-outlook_d01_2017073120_pst.npz",
+      "init_time": "2017-07-31T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "testing",
+      "month": "201804",
+      "run": "weather-outlook_d01_2018040102_pst",
+      "path": "testing/201804/weather-outlook_d01_2018040102_pst.npz",
+      "init_time": "2018-04-01T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "testing",
+      "month": "201804",
+      "run": "weather-outlook_d01_2018040108_pst",
+      "path": "testing/201804/weather-outlook_d01_2018040108_pst.npz",
+      "init_time": "2018-04-01T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "testing",
+      "month": "201804",
+      "run": "weather-outlook_d01_2018040114_pst",
+      "path": "testing/201804/weather-outlook_d01_2018040114_pst.npz",
+      "init_time": "2018-04-01T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "testing",
+      "month": "201804",
+      "run": "weather-outlook_d01_2018040120_pst",
+      "path": "testing/201804/weather-outlook_d01_2018040120_pst.npz",
+      "init_time": "2018-04-01T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "testing",
+      "month": "201804",
+      "run": "weather-outlook_d01_2018040202_pst",
+      "path": "testing/201804/weather-outlook_d01_2018040202_pst.npz",
+      "init_time": "2018-04-02T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "testing",
+      "month": "201804",
+      "run": "weather-outlook_d01_2018040208_pst",
+      "path": "testing/201804/weather-outlook_d01_2018040208_pst.npz",
+      "init_time": "2018-04-02T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "testing",
+      "month": "201804",
+      "run": "weather-outlook_d01_2018040214_pst",
+      "path": "testing/201804/weather-outlook_d01_2018040214_pst.npz",
+      "init_time": "2018-04-02T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "testing",
+      "month": "201804",
+      "run": "weather-outlook_d01_2018040220_pst",
+      "path": "testing/201804/weather-outlook_d01_2018040220_pst.npz",
+      "init_time": "2018-04-02T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "testing",
+      "month": "201804",
+      "run": "weather-outlook_d01_2018040302_pst",
+      "path": "testing/201804/weather-outlook_d01_2018040302_pst.npz",
+      "init_time": "2018-04-03T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "testing",
+      "month": "201804",
+      "run": "weather-outlook_d01_2018040308_pst",
+      "path": "testing/201804/weather-outlook_d01_2018040308_pst.npz",
+      "init_time": "2018-04-03T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "testing",
+      "month": "201804",
+      "run": "weather-outlook_d01_2018040314_pst",
+      "path": "testing/201804/weather-outlook_d01_2018040314_pst.npz",
+      "init_time": "2018-04-03T14:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "testing",
+      "month": "201804",
+      "run": "weather-outlook_d01_2018040320_pst",
+      "path": "testing/201804/weather-outlook_d01_2018040320_pst.npz",
+      "init_time": "2018-04-03T20:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "testing",
+      "month": "201804",
+      "run": "weather-outlook_d01_2018040402_pst",
+      "path": "testing/201804/weather-outlook_d01_2018040402_pst.npz",
+      "init_time": "2018-04-04T02:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    },
+    {
+      "split": "testing",
+      "month": "201804",
+      "run": "weather-outlook_d01_2018040408_pst",
+      "path": "testing/201804/weather-outlook_d01_2018040408_pst.npz",
+      "init_time": "2018-04-04T08:00:00",
+      "n_locations": 1632,
+      "max_steps": 77
+    }
+  ],
+  "totals": {
+    "runs": 242,
+    "locations": 394944,
+    "steps": 30379680
+  },
+  "issue_counts": {
+    "missing:heat_index": 2917
+  }
+}
