@@ -15,28 +15,31 @@
     </ul>
 <h2>2. Problem statement and motivation</h2>
     We are interested to analyze different method to use for forecasting weather to be used for travel purposes.
+    Predict the weather for the next 4 days.
 
 <h2>3. Dataset description: source, size, features, target, and preprocessing steps</h2>
     Data source: <br>
     NOAH-WISE WRF Model 12-km 8-day Forecast, Weather Outlook <br>
     Since its end in 2015, NOAH-WISE has continued running Weather Research and Forecasting (WRF) model simulations for research purposes in ASTI's High Performance Computing facility through the CoARE Project . <br>
     https://coaredata.asti.dost.gov.ph/dataset/wrf-001-weather-outlook<br>
+
     <p>
-    <strong>training</strong> - 4 months worth of data are uploaded on the training folder.<br>
-    <strong>testing</strong> - 1 month worth of data are uploaded on the testing folder.<br>
-    <strong>implemement</strong> folder - blank - <br>
+    <strong>training</strong> - 5 months worth of data are uploaded on the training folder.<br>
+    <strong>testing</strong> - 4 days worth of data are uploaded on the testing folder.<br> 
+    # <strong>implemement</strong> folder - blank - <br>
     </p>
     <p>
         8 Features: 
-Date,Rainfall(mm),
-2m Temp(C),
-Heat Index(C),
-Relative Humidity(%),
-Wind Speed(m/s),
-Wind Direction,
-Pressure(hPa),
-Weather
-
+        <ul>
+            <li>Date,Rainfall(mm),</li>
+            <li>2m Temp(C),</li>
+            <li>Heat Index(C),</li>
+            <li>Relative Humidity(%),</li>
+            <li>Wind Speed(m/s),</li>
+            <li>Wind Direction,</li>
+            <li>Pressure(hPa),</li>
+            <li>Weather</li>
+        </ul>
     </p>
 <h2>4. Methods: a short explanation of how each method works and how you implemented it</h2>
     <ul>
