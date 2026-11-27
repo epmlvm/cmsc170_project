@@ -1,10 +1,12 @@
 import argparse
-import collections
 import json
 import logging
+from pathlib import Path
 import sys
+import numpy as np
 
-from weather_pca import cache, config, evaluate, features, loader, ovr
+from weather_cache import CacheError
+from weather_pca import config, evaluate, features, loader, ovr
 
 logger = logging.getLogger(__name__)
 
@@ -23,7 +25,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         default=config.INCLUDE_RAINFALL,
     )
     parser.add_argument("--limit-files", type=int, default=None)
-    parser.add_argument("--no-cache", action="store_true", default=False)
+    parser.add_argument("--cache-dir", type=Path, default=config.CACHE_DIR)
     parser.add_argument("--verbose", action="store_true", default=False)
     return parser.parse_args(argv)
 
@@ -152,58 +154,31 @@ def main(argv: list[str] | None = None) -> int:
     )
 
     try:
-        train_files, test_files, train_dates, test_dates = loader.discover_files(
-            config.TRAIN_ROOT,
-            config.TEST_ROOT,
-            config.OUTLOOK_DIR_GLOB,
+        (
+            X_train,
+            y_train,
+            X_test,
+            y_test,
+            counters,
+            train_dates,
+            test_dates,
+            cache_info,
+        ) = loader.load_from_cache(
+            args.cache_dir,
+            outlook_glob=config.OUTLOOK_DIR_GLOB,
+            include_rainfall=args.include_rainfall,
             limit_files=args.limit_files,
         )
-        logger.info(
-            "Discovered %d train files (%s) and %d test files (%s)",
-            len(train_files),
-            ", ".join(train_dates),
-            len(test_files),
-            ", ".join(test_dates),
-        )
-
-        cache_file = cache.cache_path_for(
-            config.CACHE_DIR, train_files, test_files, args.include_rainfall
-        )
-        if not args.no_cache and cache_file.is_file():
-            logger.info("Loading dataset from cache: %s", cache_file)
-            X_train_raw, y_train, X_test_raw, y_test, counters = cache.load_cached(
-                cache_file
-            )
-        else:
-            counters = collections.Counter()
-            X_train_raw, y_train = loader.load_split(
-                train_files, args.include_rainfall, counters
-            )
-            X_test_raw, y_test = loader.load_split(
-                test_files, args.include_rainfall, counters
-            )
-            if not args.no_cache:
-                logger.info("Saving dataset to cache: %s", cache_file)
-                cache.save_cached(
-                    cache_file, X_train_raw, y_train, X_test_raw, y_test, counters
-                )
-
-        X_train_raw, y_train, train_oob = features.filter_out_of_bounds(
-            X_train_raw, y_train, include_rainfall=args.include_rainfall
-        )
-        X_test_raw, y_test, test_oob = features.filter_out_of_bounds(
-            X_test_raw, y_test, include_rainfall=args.include_rainfall
-        )
-        row_out_of_bounds = train_oob + test_oob
-    except ValueError as exc:
+    except (CacheError, ValueError) as exc:
         logger.error("%s", exc)
         return 1
 
-    mean, std = features.fit_standardizer(X_train_raw)
-    X_train_std = features.apply_standardizer(X_train_raw, mean, std)
-    X_test_std = features.apply_standardizer(X_test_raw, mean, std)
-    X_train = features.add_bias_column(X_train_std)
-    X_test = features.add_bias_column(X_test_std)
+    mean, std = features.fit_standardizer(X_train[:, 1:])
+    features.standardize_inplace(X_train[:, 1:], mean, std)
+    features.standardize_inplace(X_test[:, 1:], mean, std)
+    if not (np.all(np.isfinite(X_train)) and np.all(np.isfinite(X_test))):
+        logger.error("Non-finite values detected after standardization.")
+        return 1
 
     models = ovr.train_ovr(
         X_train,
@@ -223,13 +198,13 @@ def main(argv: list[str] | None = None) -> int:
     cm = evaluate.confusion_matrix(y_test, y_pred)
 
     data_summary = {
-        "train_rows": int(X_train_raw.shape[0]),
-        "test_rows": int(X_test_raw.shape[0]),
+        "train_rows": int(X_train.shape[0]),
+        "test_rows": int(X_test.shape[0]),
         "file_bad_header": int(counters["file_bad_header"]),
         "row_bad_ncols": int(counters["row_bad_ncols"]),
         "row_unknown_label": int(counters["row_unknown_label"]),
         "row_bad_value": int(counters["row_bad_value"]),
-        "row_out_of_bounds": int(row_out_of_bounds),
+        "row_out_of_bounds": int(counters["row_out_of_bounds"]),
         "range_swaps": int(counters["range_swaps"]),
     }
     feature_names = _feature_names(args.include_rainfall)
@@ -259,6 +234,7 @@ def main(argv: list[str] | None = None) -> int:
             "limit_files": None if args.limit_files is None else int(args.limit_files),
             "train_dates": list(train_dates),
             "test_dates": list(test_dates),
+            "cache": cache_info,
         },
         "features": feature_names,
         "standardizer": {

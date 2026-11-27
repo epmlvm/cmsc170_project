@@ -1,12 +1,8 @@
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-DATASET_ROOT = PROJECT_ROOT / "dataset"
-TRAIN_ROOT = DATASET_ROOT / "training"
-TEST_ROOT = DATASET_ROOT / "testing"
 OUTLOOK_DIR_GLOB = "weather-outlook_d01_*_pst"
 DATA_FILE_PREFIX = "MUN_"
-IGNORED_SUFFIXES = (".json",)
 OUTPUT_DIR = PROJECT_ROOT / "outputs"
 CACHE_DIR = PROJECT_ROOT / "cache"
 
@@ -17,18 +13,6 @@ SEED = 170
 INCLUDE_RAINFALL = False
 
 CLASSES = ("Clear", "Cloud", "Rain")  # fixed order everywhere (tie-break, matrix rows/cols)
-
-EXPECTED_HEADER = (
-    "Date",
-    "Rainfall(mm)",
-    "2m Temp(C)",
-    "Heat Index(C)",
-    "Relative Humidity(%)",
-    "Wind Speed(m/s)",
-    "Wind Direction",
-    "Pressure(hPa)",
-    "Weather",
-)
 
 BASE_FEATURES = (
     "Pressure",

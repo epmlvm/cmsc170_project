@@ -1,5 +1,7 @@
 outputs/
 cache/
+cache.building/
+cache.old/
 __pycache__/
 *.pyc
 tests/
