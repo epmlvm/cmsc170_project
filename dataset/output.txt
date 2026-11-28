@@ -1,0 +1,44 @@
+Mode : training
+Total Provinces:  82
+Total Municipalities:  1632
+Total Weather Files:  944903
+Total Weather Records:  72723468
+Total Weather Codes:  16
+
+---WEATHER CODE VOCABULARY---
+ClearD : 9507320
+ClearN : 8665746
+Cloud1D : 9222746
+Cloud1N : 10593486
+Cloud2D : 5789269
+Cloud2N : 3325284
+Rain0D : 1544467
+Rain0N : 5941858
+Rain1D : 11386775
+Rain1N : 6063682
+Rain2D : 359722
+Rain2N : 178280
+Rain3D : 42627
+Rain3N : 47686
+Rain4D : 27757
+Rain4N : 26763
+
+Frontier Saved: C:\Users\Elvie\Documents\cmsc170\project_SPF170\dataset\frontier.json (1632 locations, 944903 files, 72723468 records)
+
+--- P(W(t) | W(t-1), DN) : training transition counts ---
+Clear|D    -> {'Cloud1': 979452, 'Clear': 2726491, 'Rain0': 107290, 'Rain1': 714696, 'Cloud2': 226993, 'Rain2': 1452, 'Rain3': 32, 'Rain4': 14}
+Clear|N    -> {'Clear': 2164911, 'Cloud1': 759656, 'Rain0': 139607, 'Cloud2': 159448, 'Rain1': 194865, 'Rain2': 218, 'Rain3': 16, 'Rain4': 2}
+Cloud1|D   -> {'Cloud1': 2101805, 'Clear': 1109497, 'Rain0': 370082, 'Cloud2': 737812, 'Rain1': 959202, 'Rain2': 9023, 'Rain3': 278, 'Rain4': 96}
+Cloud1|N   -> {'Rain0': 608155, 'Cloud1': 1985950, 'Clear': 931210, 'Rain1': 420869, 'Cloud2': 495133, 'Rain2': 2558, 'Rain3': 321, 'Rain4': 116}
+Cloud2|D   -> {'Cloud1': 675380, 'Cloud2': 1236537, 'Rain0': 54803, 'Rain1': 623226, 'Clear': 158652, 'Rain2': 11209, 'Rain4': 137, 'Rain3': 389}
+Cloud2|N   -> {'Rain1': 316637, 'Cloud1': 548053, 'Clear': 93738, 'Cloud2': 1046867, 'Rain0': 327587, 'Rain3': 389, 'Rain2': 4553, 'Rain4': 140}
+Rain0|D    -> {'Cloud1': 615981, 'Rain1': 279540, 'Rain0': 794754, 'Clear': 129355, 'Cloud2': 561220, 'Rain2': 3354, 'Rain4': 26, 'Rain3': 162}
+Rain0|N    -> {'Cloud2': 72175, 'Cloud1': 588113, 'Clear': 120323, 'Rain0': 1065227, 'Rain1': 124362, 'Rain2': 1240, 'Rain3': 167, 'Rain4': 36}
+Rain1|D    -> {'Cloud1': 304779, 'Cloud2': 210373, 'Rain1': 2642176, 'Rain0': 99717, 'Clear': 187763, 'Rain2': 117070, 'Rain4': 5781, 'Rain3': 9961}
+Rain1|N    -> {'Rain1': 3476164, 'Cloud1': 1076341, 'Cloud2': 338686, 'Clear': 497086, 'Rain0': 789736, 'Rain2': 110945, 'Rain4': 10768, 'Rain3': 19804}
+Rain2|D    -> {'Rain2': 47517, 'Rain1': 34527, 'Rain0': 1090, 'Clear': 61, 'Rain3': 5633, 'Cloud1': 910, 'Rain4': 2271, 'Cloud2': 1737}
+Rain2|N    -> {'Rain1': 162296, 'Cloud1': 14912, 'Rain0': 21337, 'Rain2': 85633, 'Clear': 2034, 'Cloud2': 6112, 'Rain4': 6160, 'Rain3': 11275}
+Rain3|D    -> {'Rain1': 5001, 'Rain2': 3801, 'Rain3': 4448, 'Cloud1': 104, 'Rain0': 238, 'Rain4': 2299, 'Cloud2': 250, 'Clear': 15}
+Rain3|N    -> {'Cloud1': 2610, 'Rain1': 20599, 'Rain2': 8154, 'Rain0': 4674, 'Clear': 450, 'Rain4': 4512, 'Rain3': 8140, 'Cloud2': 642}
+Rain4|D    -> {'Rain1': 1795, 'Rain4': 3041, 'Rain2': 1499, 'Cloud1': 26, 'Rain3': 2097, 'Rain0': 117, 'Cloud2': 55}
+Rain4|N    -> {'Clear': 139, 'Cloud1': 1365, 'Rain1': 11679, 'Rain0': 2389, 'Rain3': 5333, 'Rain2': 4064, 'Cloud2': 260, 'Rain4': 6530}
